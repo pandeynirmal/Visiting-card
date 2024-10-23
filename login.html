@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+          .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        /**{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+            text-decoration: none;
+        }*/
+        .container {
+            width: 20%;
+            height: 300px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 25px;
+            padding-right: 40px;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 25px;
+            /* background: linear-gradient(135deg,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.7) 100%); */
+            margin: auto;
+            /* display: block; */
+            /* float: right; */
+
+        }
+
+        #pas {
+            margin-top: 5px;
+            margin-left: 0px;
+            width: 285px;
+            padding: 5px;
+            border: 0.3px soli black;
+        }
+
+        #fname {
+            margin-top: 5px;
+            width: 285px;
+            padding: 5px;
+            border: 0.3px solid black;
+        }
+
+        #login {
+            background-color:rgb(4, 127, 127);
+            color: white;
+            border-radius: 5px;
+            width: 300px;
+            /* -webkit-appearance: button; */
+            cursor: pointer;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0.1px solid black;
+            /* margin-left: 0px; */
+            margin-bottom: 10px;
+        }
+        #login:hover{
+            background-color: rgb(3, 89, 89);
+        }
+        #reset{
+            background-color:rgb(4, 127, 127);
+            color: white;
+            border-radius: 5px;
+            width: 300px;
+            /* -webkit-appearance: button; */
+            cursor: pointer;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0.1px solid black;
+            /* margin-left: 0px; */
+            margin-bottom: 15px;
+
+        }
+        #reset:hover{
+            background-color: rgb(3, 89, 89);
+        }
+
+        /* #login:hover {
+            background-color: teal;
+            border: 0.1px solid whitesmoke;
+        } */
+
+        form {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 0px;
+            margin-bottom: 0px;
+
+        }
+
+        .body {
+            background-image: url('back.jpg');
+            background-size: cover;
+            height: 600px;
+            padding-top: 20px;
+        }
+
+        img {
+            height: 90px;
+            /* float: left; */
+            margin-top: 8px;
+            margin-right: 0px;
+        }
+
+        #welcome {
+            display: inline;
+            font-weight: 1px;
+            background-color: rgba(60, 179, 113, 0.7);
+            width: 400px;
+            padding: 5px 10px 10px 5px;
+            color: black;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #signup {
+            margin-right: 5px;
+            float: right;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        #signup:hover {
+            border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 3px;
+        }
+
+        #forgot {
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            float: left;
+        }
+
+        #forgot:hover {
+            border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 3px;
+        }
+    </style>
+    </head>
+<body>
+    <div class="body">
+        <h2 id="welcome">Login to continue.....</h2>
+        <div class="container">
+            <form action="check.php" method="POST">
+                <label for="fname"> UserName/Email:</label>
+                <input type="text" name="fname" id="fname" required autocomplete="off"><br><br>
+                <label for="password">Password : </label>
+                <input type="password" id="pas" name="pas" required autocomplete="off"><br><br>
+                <input type="submit" name="submit" id="login" value="SUBMIT">
+                <input type="reset" value="RESET" id="reset" alert="value reset">
+            </form>
+            <a href="#" id="forgot">Forgot Password</a><a href="signup.html" id="signup"> SignUP</a>
+        </div>
+    </div>
+    </body>
+</html>

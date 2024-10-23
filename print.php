@@ -1,0 +1,294 @@
+<?php
+
+if(isset($_POST["submit"])){
+
+// $quantity=$_POST['quantity'];
+$name=$_POST['uname'];
+$email=$_POST['email'];
+$phone=$_POST['phone'];
+$address=$_POST['address'];
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one</title>
+    
+</head>
+<style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background: url(back.jpg);
+            background-size: cover;
+
+        }
+         .header{
+            overflow: hidden;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.7);
+         }
+         .back{
+            height: 60px;
+            width: 80px;
+            padding-left: 20px;
+            padding-top: 13px;
+            display: inline-block;
+            background-color: rgb(4, 127, 127);
+        }
+        .back:hover{
+            background-color: rgb(4, 111, 111);
+        }
+         a{
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: aliceblue;
+            font-size:x-large;
+         }
+         .container1{
+            display: block;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 580px;
+            height: 400px;
+            background-color:rgba(0,0, 0, 0.9);
+            padding: 30px;
+            font-size:medium;
+            color: white;
+            padding-top: 20px;
+            /* border-radius: 20px; */
+            margin-top: 30px;
+            margin-left: 45px;
+            float: left;
+        }
+         .container{
+             display: block;
+             width: 580px;
+             height: 430px;
+             background-color:rgba(0, 0, 0, 0.9);
+             margin-left: 50px;
+             margin-top: 30px;
+             padding-top: 30px;
+             color:rgb(255, 255, 255);
+             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-size: larger;
+             float: left;
+         }
+         .one{
+             background-color: black;
+             width: 450px;
+             height: 250px;
+             margin-left: 12%;
+             margin-bottom: 30px;
+             position: relative;
+         }
+         select{
+             background-color: rgb(255, 255, 255);
+             font-family:Verdana, Geneva, Tahoma, sans-serif;
+             padding: 4px;
+             font-size: large;
+             border: none;
+             border-radius: 3px;
+             /* margin-top: 30pxs; */
+             margin-bottom: 10px;
+         }
+         span{
+             margin-left: 70px;
+             background-color: rgb(4, 127, 127);
+             padding: 4px;
+             color: rgb(255, 255, 255);
+             font-size: large;
+             border: none;
+             border-radius: 3px;
+         
+         }
+         .button{
+             width: 460px;
+             height: 40px;
+             margin-left: 70px;
+             margin-bottom: 10px;
+             background-color: rgb(4, 127, 127);
+             border: none;
+             color: whitesmoke;
+             font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-size: large;
+             cursor: pointer;
+             border-radius: 3px;
+         }
+         input[type=text]{
+             padding: 5px;
+             border: none;
+             border-radius: 3px;
+         }
+         .button:hover{
+            background-color: rgb(4, 111, 111);
+         }
+         
+        .name{
+
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.email{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.phone{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input[type=text]{
+width: 450px;
+padding: 8px;
+}
+#u{
+margin-left: 45px;
+margin-bottom: 20px;
+}
+#p{
+margin-left: 16px;
+margin-bottom: 20px;
+}
+#a{
+    margin-left: 27px;
+margin-bottom: 20px;
+}
+#d{
+    margin-left: 32px;
+margin-bottom: 20px;
+width: 50px;
+}
+#e{
+margin-left: 48px;
+margin-bottom: 20px;
+}
+#ph{
+margin-left: 40px;
+margin-bottom: 20px;
+
+}
+#btn{
+width: 520px;
+margin-left: 30px;
+margin-bottom: 10px;
+padding: 10px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: medium;
+cursor: pointer;
+border-radius: 10px;
+background-color: rgb(4, 127, 127);
+color: white;
+}
+#btn:hover{
+width: 520px;
+margin-left: 30px;
+padding: 10px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: medium;
+cursor: pointer;
+border-radius: 10px;
+background-color: rgb(3, 89, 89);
+color: white;
+}
+h1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: whitesmoke;
+            /* margin-left: 340px; */
+            font-size:x-large;
+            margin: auto;
+            margin-bottom: 5px;
+            color: lemonchiffon;
+        }
+        hr{
+            margin-bottom: 20px;
+            /* color: whitesmoke; */
+            background-color: whitesmoke;
+        }
+        .content{
+            height: 100px;
+            color: black;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:large;
+            position: absolute;
+            top: 80px;
+            left: 150px;
+        }
+        #name{
+            float: right;
+            margin-bottom: 8px;
+        }
+        #email{
+            float: right;
+            margin-bottom: 8px;
+        }
+        #phone{
+            /* margin-left: 135px; */
+            float: right;
+            /* margin-bottom: 50px; */
+        } 
+        /* #address{
+            float: right;
+        } */
+        img{
+            width: 450px;
+            height: 250px;
+            border: 1px solid black;
+
+        }
+    </style>
+    <body>
+        
+
+<div class="header">
+        <div class="back"><a href="filldetails.php">Back</a></div>
+            </div>
+            </div><div class="container1">
+<h1> Fill Your Details Here</h1>
+        <hr></hr>
+        <form action="create.php" method="POST">
+      <div class="name">Name : <input type="text" id="u" name="uname" value="<?php echo@$name?>"></div>
+      <div class="email">Email : <input type="text" id="e" name="email" value="<?php echo@$email?>"></div>
+      <div class="phone">Phone : <input type="text" id="ph" name="phone" value="<?php echo@$phone?>"></div>
+      <div class="address">Address : <input type="text" id="a" name="address" value="<?php echo@$address?>"></div>
+      <div class="address">Design : <input type="text" id="d" name="design" value="one"></div>
+     <div class="btn"> <input type="submit" name="submit" id="btn" value="CREATE"></div>
+     <div class="btn"> <input type="submit" name="submit" formaction="print.php" id="btn" value="SHOW ON CARD"></div>
+    </form>
+</div>
+    <div class="container">
+        <div class="one" id="one">
+            <img src="oneimg.jpg" alt="one template">
+       
+            <div class="content" id="content">
+            <p id="name"><?php echo@$name?></p><br>
+                <P id="email"><?php echo@$email?></p><br>
+                <P id="phone">Ph: <?php echo@$phone?>, <?php echo@$address?></P><br>
+                <!-- <P id="address"></p> -->
+                
+               
+            </div>
+        </div>
+        <form action="pay.php" class="form" method="POST">
+            <span>Select Qualtity:</span> <select name="quantity">
+                <option value="100">100</option>
+                <option value="500">500</option>
+                <option value="100">1000</option>
+                <option value="2000">2000</option>
+                <option value="4000" selected>4000</option>
+            </select><br>
+            <button class="button" name="submit" value="ORDER">ORDER</button>
+            <button class="button" name="submit" value="ORDER" onclick="myfun()">PRINT</button>
+        </form>
+        
+           
+    </div>
+    <script type="text/javascript">
+        function myfun(){
+var divcontent=document.getElementById("one").innerHTML;
+document.body.innerHTML=divcontent;
+window.print();
+}
+    </script>
+    </body>
+</html>

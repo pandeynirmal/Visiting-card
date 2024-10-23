@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+
+    <style>
+        h1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: whitesmoke;
+            /* margin-left: 340px; */
+            font-size:x-large;
+            margin: auto;
+            margin-bottom: 5px;
+            color: lemonchiffon;
+        }
+        hr{
+            margin-bottom: 20px;
+        }
+        .container{
+            display: block;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 660px;
+            height: 400px;
+            background-color:rgba(0,0, 0, 0.9);
+            padding: 30px;
+            font-size: large;
+            color: white;
+            padding-top: 20px;
+            border-radius: 20px;
+            margin-top: 80px;
+            margin-left: 350px;
+        }
+
+        .name{
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .pass{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        input[type=text]{
+            width: 500px;
+            padding: 8px;
+        }
+        #u{
+            margin-left: 45px;
+            margin-bottom: 30px;
+        }
+        #p{
+            margin-left: 16px;
+            margin-bottom: 30px;
+        }
+        #e{
+            margin-left: 48px;
+            margin-bottom: 30px;
+        }
+        #ph{
+            margin-left: 40px;
+            margin-bottom: 30px;
+
+        }
+        #btn{
+            width: 520px;
+            margin-left: 100px;
+            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgb(4, 127, 127);
+            color: white;
+        }
+        #btn:hover{
+            width: 520px;
+            margin-left: 100px;
+            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgb(3, 89, 89);
+            color: white;
+        }
+        body{
+            background-image: url(back.jpg);
+            background-size: cover;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1> SignUp</h1>
+        <hr></hr>
+        <form action="insert.php" method="POST">
+      <div class="name">Name : <input type="text" id="u" name="uname" placeholder="" required autocomplete="off"></div>
+      <div class="pass">Password : <input type="password" id="p" name="pass" placeholder="" required autocomplete="off"></div>
+      <div class="email">Email : <input type="text" id="e" name="email" placeholder="" required autocomplete="off"></div>
+      <div class="phone">Phone : <input type="text" id="ph" name="phone" placeholder="" required autocomplete="off"></div>
+     <div class="btn"> <input type="submit" name="submit" id="btn" value="ADD"></div>
+    </form>
+    </div>    
+    
+    
+</body>
+</html>
+
